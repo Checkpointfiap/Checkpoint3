@@ -11,7 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if(inputDarkMode.checked){
           html.setAttribute("dark", "true")
           localStorage.setItem('dark-mode', true)
-
+        }else{
+          html.removeAttribute("dark")
+          localStorage.removeItem('dark-mode')
         }
       })
   
