@@ -9,7 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
   
       inputDarkMode.addEventListener('change', () => {
         if(inputDarkMode.checked){
-        
+          html.setAttribute("dark", "true")
+       
+
         }
       })
   
