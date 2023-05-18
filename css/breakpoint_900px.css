@@ -1,6 +1,6 @@
-@media(max-width: 630px){
-    
-    .cabecalho{
+@media(max-width:768px){
+
+    .cabecalho {
         flex-direction: column;
     }
 
@@ -11,12 +11,11 @@
 
     .cabecalho a {
         padding: 2vh 0;
-        font-size: 1rem;
+        font-size: 2rem;
     }
 
-    .conteudo > div p{
-        font-size: 1.4em;
+    .cabecalho > div p {
+        font-size: 1.6em;
         background-color: gray;
     }
-
 }
