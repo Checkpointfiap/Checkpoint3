@@ -29,5 +29,21 @@ addEventListener("click", (evt)=>{
             inputName.setAttribute("style","");
         }
 
+        if(inputSurname.value.length < 5 && inputSurname.value.length > 0){
+            console.log("errado");
+            inputSurname.setAttribute("style","border:2px ridge red ");
+            msgStatus.innerHTML ="<span><strong><i>Campo Segundo Nome preenchido incorretamente</i></strong></span>";
+            msgStatus.setAttribute("style", "color:red");
+            inputSurname.value ="";
+            inputSurname.placeholder ="Minimo de 5 caracteres";
+
+        }else if(inputSurname.value.length >= 5){
+            console.log("certo");
+            inputSurname.setAttribute("style","border:2px ridge lime");
+            msgStatus.innerHTML="";
+        }else{
+            inputSurname.setAttribute("style","");
+        }
+
 
     })
