@@ -45,5 +45,21 @@ addEventListener("click", (evt)=>{
             inputSurname.setAttribute("style","");
         }
 
+        if(inputEmail.value.length == 0){
+            inputEmail.setAttribute("style","color;");
+        }
+        else if((inputEmail.value.length < 5 && inputEmail.value.length > 0) || (inputEmail.value.indexOf("@") == -1)){
+            console.log("errado");
+            inputEmail.setAttribute("style","border:2px ridge red   ");
+            msgStatus.innerHTML ="<span><strong><i>Campo email preenchido incorretamente</i></strong></span>";
+            msgStatus.setAttribute("style", "color:red");
+            inputEmail.value ="";
+            inputEmail.placeholder ="Email inválido";
+        }else if(inputEmail.value.length >= 5){
+            console.log("certo");
+            inputEmail.setAttribute("style","border:2px ridge lime");
+            msgStatus.innerHTML="";
+        }
+
 
     })
