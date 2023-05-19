@@ -101,4 +101,12 @@ addEventListener("click", (evt)=>{
         }
 
 
+        if(evt.target.id == "btnSubmit"){
+            if(nameCorreto == true && emailCorreto == true  && senhaCorreto == true  && confirmPassCorreto == true  && surnameCorreto == true ){
+                alert("Parabens, validação de dados feita com sucesso!")
+            }
+            else if (nameCorreto != true || emailCorreto != true  || senhaCorreto != true  || confirmPassCorreto != true  || surnameCorreto != true ){
+                alert("Seus valores são invalidos")
+            }
+        }
     })
