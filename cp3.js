@@ -8,11 +8,15 @@ const msgStatus = document.querySelector("#msg");
 const msgName = document.querySelector("#msgName")
 const form = document.querySelector("#form")
 
-
+let nameCorreto = false;
+let surnameCorreto = false;
+let emailCorreto = false;
+let senhaCorreto = false;
+let confirmPassCorreto = false;
 
 addEventListener("click", (evt)=>{
-    console.log(evt)
-    console.log(evt.target)
+    console.log(evt);
+    console.log(evt.target);
     
         if(inputName.value.length < 5 && inputName.value.length > 0){
             console.log("errado");
@@ -22,7 +26,7 @@ addEventListener("click", (evt)=>{
             inputName.value ="";
             inputName.placeholder ="Minimo de 5 caracteres";
         }else if(inputName.value.length >= 5){
-            console.log("certo");
+            nameCorreto = true;
             inputName.setAttribute("style","border:2px ridge lime");
             msgStatus.innerHTML="";
         }else{
@@ -38,7 +42,7 @@ addEventListener("click", (evt)=>{
             inputSurname.placeholder ="Minimo de 5 caracteres";
 
         }else if(inputSurname.value.length >= 5){
-            console.log("certo");
+            surnameCorreto = true;
             inputSurname.setAttribute("style","border:2px ridge lime");
             msgStatus.innerHTML="";
         }else{
@@ -56,7 +60,7 @@ addEventListener("click", (evt)=>{
             inputEmail.value ="";
             inputEmail.placeholder ="Email inválido";
         }else if(inputEmail.value.length >= 5){
-            console.log("certo");
+            emailCorreto = true;
             inputEmail.setAttribute("style","border:2px ridge lime");
             msgStatus.innerHTML="";
         }
@@ -74,13 +78,13 @@ addEventListener("click", (evt)=>{
             inputSenha.setAttribute("style","");
         }
         else if(inputSenha.value.length >= 6 && inputSenha.value.length <= 8){
-            console.log("certo");
+            senhaCorreto = true;
             inputSenha.setAttribute("style","border:2px ridge lime");
             msgStatus.innerHTML="";
         }
 
         if((inputConfirmPass.value != inputSenha.value) || (inputConfirmPass.value.length < 6 && inputConfirmPass.value.length > 0)){
-            console.log("errado")
+            console.log("errado");
             inputConfirmPass.setAttribute("style","border:2px ridge red ");
             msgStatus.innerHTML ="<span><strong><i>Campo de confirmação de senha preenchido incorretamente</i></strong></span>";
             msgStatus.setAttribute("style", "color:red");
@@ -88,7 +92,7 @@ addEventListener("click", (evt)=>{
             inputConfirmPass.placeholder ="Senha não condiz";
         }
         else if((inputConfirmPass.value.length >= 5 && inputConfirmPass.value.length <= 8) && (inputConfirmPass.value == inputSenha.value)){
-            console.log("certo")
+            confirmPassCorreto = true;
             inputConfirmPass.setAttribute("style","border:2px ridge lime ");
             msgStatus.innerHTML="";
         }
@@ -97,5 +101,4 @@ addEventListener("click", (evt)=>{
         }
 
 
-        
     })
