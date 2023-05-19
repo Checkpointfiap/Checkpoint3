@@ -61,5 +61,23 @@ addEventListener("click", (evt)=>{
             msgStatus.innerHTML="";
         }
 
+        if(inputSenha.value.length < 6 && inputSenha.value.length > 0){
+            
+            console.log("errado");
+            inputSenha.setAttribute("style","border:2px ridge red ");
+            msgStatus.innerHTML ="<span><strong><i>Campo Senha preenchido incorretamente</i></strong></span>";
+            msgStatus.setAttribute("style", "color:red");
+            inputSenha.value ="";
+            inputSenha.placeholder ="minimo de 6 caracteres";
+        }    
+        else if (inputSenha.value.length == 0){
+            inputSenha.setAttribute("style","");
+        }
+        else if(inputSenha.value.length >= 6 && inputSenha.value.length <= 8){
+            console.log("certo");
+            inputSenha.setAttribute("style","border:2px ridge lime");
+            msgStatus.innerHTML="";
+        }
+
 
     })
