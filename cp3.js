@@ -79,5 +79,23 @@ addEventListener("click", (evt)=>{
             msgStatus.innerHTML="";
         }
 
+        if((inputConfirmPass.value != inputSenha.value) || (inputConfirmPass.value.length < 6 && inputConfirmPass.value.length > 0)){
+            console.log("errado")
+            inputConfirmPass.setAttribute("style","border:2px ridge red ");
+            msgStatus.innerHTML ="<span><strong><i>Campo de confirmação de senha preenchido incorretamente</i></strong></span>";
+            msgStatus.setAttribute("style", "color:red");
+            inputConfirmPass.value ="";
+            inputConfirmPass.placeholder ="Senha não condiz";
+        }
+        else if((inputConfirmPass.value.length >= 5 && inputConfirmPass.value.length <= 8) && (inputConfirmPass.value == inputSenha.value)){
+            console.log("certo")
+            inputConfirmPass.setAttribute("style","border:2px ridge lime ");
+            msgStatus.innerHTML="";
+        }
+        else if (inputConfirmPass.value.length == 0){
+            inputConfirmPass.setAttribute("style","");
+        }
 
+
+        
     })
