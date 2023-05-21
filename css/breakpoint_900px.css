@@ -1,0 +1,21 @@
+@media(max-width:900px){
+
+    .cabecalho {
+        flex-direction: column;
+    }
+
+    .cabecalho nav {
+        flex-wrap: nowrap;
+        height: auto;
+    }
+
+    .cabecalho a {
+        padding: 2vh 0;
+        font-size: 2rem;
+    }
+
+    .cabecalho > div p {
+        font-size: 1.6em;
+        background-color: gray;
+    }
+}
