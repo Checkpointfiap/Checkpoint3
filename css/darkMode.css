@@ -1,5 +1,6 @@
 html[dark]{
     background-color: black;
+    color: white;
   }
 
   html[dark] .icons .icon p{
