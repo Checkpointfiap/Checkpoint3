@@ -12,3 +12,10 @@ GRUPO
 550247 - Alexandre Martelanc
 
 552295 - Matheus Felipe Camarinha Duarte
+
+
+URL do repositório:
+https://github.com/Checkpointfiap/Checkpoint3.git
+
+Link do Gitpages:
+https://checkpointfiap.github.io/Checkpoint3/
