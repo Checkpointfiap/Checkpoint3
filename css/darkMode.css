@@ -1,0 +1,41 @@
+html[dark]{
+    background-color: black;
+    color: white;
+  }
+
+  html[dark] .icons .icon p{
+    color: white;
+  }
+
+  html[dark] .button{
+    color: white;
+  }
+
+  .icon{
+    display: flex;
+    justify-content: center;
+  }
+
+  .icons .icon{
+    margin: 0 10px;
+  }
+
+  .icons .icon img{
+    border-radius: 50%;
+    width: 128px;
+  }
+
+  .icons .icon p{
+    text-align: center;
+  }
+
+  .button{
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
+  }
+  
+  .button:hover{
+    cursor: pointer;
+  }
