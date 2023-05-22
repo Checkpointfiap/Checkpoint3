@@ -35,19 +35,33 @@
     <div id="msg"></div>
 
     <div>
-        <form method="get" onsubmit="return false">
+        <form id="form" action="index.html" method="get" onsubmit="return false">
             <fieldset>
                 <legend>Entrar</legend>
                 <div>
-                    <label for="idEmail">Email</label>
-                    <input type="email" name="txtEmail" id="idEmail" placeholder="Email">
                     <br>
+                    <label for="idName">Nome</label>
+                    <input type="text" name="txtName" id="idName" placeholder="Nome">
+                </div>
+                <div>
+                    <br>
+                    <label for="idSurname">Segundo Nome</label>
+                    <input type="text" name="txtSurname" id="idSurname" placeholder="Segundo nome"> 
+                </div>
+                <div>
+                    <br>
+                    <label for="idEmail">Email</label>
+                    <input type="email" name="txtEmail" id="idEmail" placeholder="Email">   
                 </div>
                 <div>
                     <br>
                     <label for="idPass">Senha</label>
                     <input type="password" name="txtPass" id="idPass" placeholder="Senha">
+                </div>
+                <div>
                     <br>
+                    <label for="idConfirmPass">Confirme a senha</label>
+                    <input type="password" name="txtConfirmPass" id="idConfirmPass"  placeholder="Confirmar senha">
                 </div>
                 <div>
                     <br>
