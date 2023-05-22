@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="./cp3.js" defer></script>
+    
+    <title>Entrar</title>
+</head>
+<body>
+
+    <div id="msg"></div>
+
+    <div>
+        <form id="form" action="index.html" method="get" onsubmit="return false">
+            <fieldset>
+                <legend>Entrar</legend>
+                <div>
+                    <label for="idName">Nome</label>
+                    <input type="text" name="txtName" id="idName" placeholder="Nome">
+                </div>
+                <div>
+                    <label for="idSurname">Segundo Nome</label>
+                    <input type="text" name="txtSurname" id="idSurname" placeholder="Segundo nome"> 
+                </div>
+                <div>
+                    <label for="idEmail">Email</label>
+                    <input type="email" name="txtEmail" id="idEmail" placeholder="Email">
+                </div>
+                <div>
+                    <label for="idPass">Senha</label>
+                    <input type="password" name="txtPass" id="idPass" placeholder="Senha">
+                </div>
+                <div>
+                    <label for="idConfirmPass">Confirme a senha</label>
+                    <input type="password" name="txtConfirmPass" id="idConfirmPass"  placeholder="Confirmar senha">
+                </div>
+                <div>
+                    <button type="submit" id="btnSubmit">Entrar</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+</html>
